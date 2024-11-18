@@ -1,0 +1,12 @@
+<article class="card mb-2">
+    <div class="card-body">
+        <p>{{url.origin}}</p>
+        <p>{{url.shortURL}}</p>
+        <button class="btn btn-primary" data-short="{{url.shortURL}}">
+            Copy
+        </button>
+        <a href="/redirect/{{url._id}}" class="btn btn-secondary">Redirect</a>
+        <a href="/edit/{{url._id}}" class="btn btn-warning">Edit</a>
+        <a href="/delete/{{url._id}}" class="btn btn-danger">Delete</a>
+    </div>
+</article>
